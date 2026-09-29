@@ -22,3 +22,6 @@ run:
 
 clean:
 	rm -rf bin/*
+
+asan:
+	$(CC) $(CFLAGS) -fsanitize=address $(SRC) -o $(TARGET)
